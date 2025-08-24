@@ -1,0 +1,132 @@
+REPLIT APK BUILD - STEP BY STEP GUIDE
+====================================
+
+Developed by: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+🚀 BUILD YOUR APK IN 10 MINUTES!
+
+STEP 1: SETUP REPLIT ACCOUNT
+===========================
+1. Go to https://replit.com
+2. Click "Sign up" (free account)
+3. Verify your email
+4. Login to Replit
+
+STEP 2: CREATE PROJECT
+=====================
+1. Click "Create Repl"
+2. Select "Python" template
+3. Name it "TriAxis-Pro"
+4. Click "Create Repl"
+
+STEP 3: UPLOAD FILES
+===================
+1. In Replit file explorer (left panel)
+2. Delete the default "main.py"
+3. Click "Upload file" or drag & drop:
+   - main.py (from your package)
+   - buildozer.spec (from your package)
+
+STEP 4: INSTALL DEPENDENCIES
+===========================
+1. Click on "Shell" tab (bottom panel)
+2. Run these commands one by one:
+
+pip install kivy kivymd
+pip install buildozer
+pip install cython
+
+STEP 5: BUILD APK
+================
+1. In the Shell, run:
+
+buildozer android debug
+
+2. Wait 10-15 minutes for build to complete
+3. You'll see "BUILD SUCCESSFUL" message
+
+STEP 6: DOWNLOAD APK
+===================
+1. In file explorer, navigate to "bin" folder
+2. Find "triaxispro-1.0-debug.apk"
+3. Right-click → "Download"
+4. Save to your computer
+
+STEP 7: INSTALL ON ANDROID
+=========================
+1. Transfer APK to Android device
+2. Enable "Unknown Sources" in Settings
+3. Install the APK
+4. Launch "TriAxis Pro" app
+
+TROUBLESHOOTING:
+===============
+
+Build fails with "No Android SDK":
+- Replit should handle this automatically
+- Try running: buildozer android debug --verbose
+
+Out of memory error:
+- Replit free tier has limits
+- Try upgrading to Replit Pro ($7/month)
+
+Build takes too long:
+- This is normal for first build (10-15 minutes)
+- Subsequent builds are faster
+
+Can't download APK:
+- Check "bin" folder exists
+- APK file should be ~15-25MB
+- Try right-click → "Download"
+
+ALTERNATIVE COMMANDS:
+====================
+
+For release APK (smaller, optimized):
+buildozer android release
+
+For verbose output (debugging):
+buildozer android debug --verbose
+
+Clean build (if errors):
+buildozer android clean
+buildozer android debug
+
+EXPECTED OUTPUT:
+===============
+✅ APK Size: ~15-25MB
+✅ Package: com.apexprecision.triaxispro
+✅ Version: 1.0
+✅ Min Android: 5.0 (API 21)
+✅ Target Android: 11 (API 30)
+
+FINAL APK FEATURES:
+==================
+📱 Professional TriAxis Pro interface
+🔵 Bluetooth connectivity simulation
+📶 WiFi connectivity simulation
+⚙️ 3-axis motor controls
+📊 Real-time position display
+🎯 Pattern execution
+🛑 Emergency stop functionality
+ℹ️ About page with your branding
+
+SUCCESS INDICATORS:
+==================
+✅ "BUILD SUCCESSFUL" in terminal
+✅ APK file appears in bin/ folder
+✅ File size 15-25MB (not 1KB!)
+✅ Can install on Android device
+✅ App launches without crashes
+
+SUPPORT:
+========
+If you get stuck at any step:
+📧 Email: support@apexprecision.com
+👨‍💻 Developer: Amol M.
+🏢 Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+This method gives you a REAL, working APK file!
+
+© 2024 APEX PRECISION MECHATRONIX PVT. LTD.

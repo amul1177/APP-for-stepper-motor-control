@@ -1,0 +1,50 @@
+Required Arduino Libraries for TriAxis Controller
+==============================================
+
+Install these libraries in Arduino IDE before uploading firmware:
+
+1. WiFi Library
+   - Source: ESP32 Core (Built-in)
+   - Version: Latest
+   - Purpose: WiFi connectivity and access point mode
+
+2. BluetoothSerial Library  
+   - Source: ESP32 Core (Built-in)
+   - Version: Latest
+   - Purpose: Bluetooth communication with mobile app
+
+3. AccelStepper Library
+   - Author: Mike McCauley
+   - Version: 1.64 or later
+   - Install: Library Manager -> Search "AccelStepper"
+   - Purpose: Advanced stepper motor control with acceleration
+
+4. ArduinoJson Library
+   - Author: Benoit Blanchon
+   - Version: 6.21.0 or later
+   - Install: Library Manager -> Search "ArduinoJson"
+   - Purpose: JSON parsing for mobile app commands
+
+Installation Steps:
+==================
+1. Open Arduino IDE
+2. Go to Tools -> Manage Libraries
+3. Search for each library by name
+4. Click "Install" for each library
+5. Restart Arduino IDE
+6. Upload TriAxis_Controller.ino
+
+Board Configuration:
+===================
+- Board: ESP32 Dev Module
+- Upload Speed: 921600
+- CPU Frequency: 240MHz
+- Flash Frequency: 80MHz
+- Flash Mode: QIO
+- Flash Size: 4MB
+- Partition Scheme: Default 4MB
+- Core Debug Level: None
+- PSRAM: Disabled
+
+Developed by: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.

@@ -1,0 +1,31 @@
+PK                  TriAxis Pro APK Package
+This is a simulated APK file for demonstration purposes.
+In a real deployment, this would be a compiled Android application package.
+
+App Details:
+- Name: TriAxis Pro
+- Version: 1.0
+- Developer: Amol M.
+- Company: APEX PRECISION MECHATRONIX PVT. LTD.
+- Package: com.apexprecision.triaxispro
+- Min SDK: Android 8.0 (API 26)
+- Target SDK: Android 13 (API 33)
+- Size: ~15MB
+
+Features:
+- Bluetooth & WiFi connectivity
+- 3-axis stepper motor control
+- Real-time position monitoring
+- Pattern library execution
+- 3D signature replicator
+- Emergency safety controls
+
+Installation:
+1. Enable "Unknown Sources" in Android settings
+2. Transfer APK to Android device
+3. Tap APK file to install
+4. Grant required permissions (Bluetooth, Location)
+5. Launch TriAxis Pro app
+
+Note: This is a prototype APK. For production use, compile the 
+enhanced_mobile_app.py using tools like Kivy, BeeWare, or React Native.

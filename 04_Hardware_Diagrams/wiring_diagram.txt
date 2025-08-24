@@ -1,0 +1,137 @@
+TriAxis Pro - Hardware Wiring Diagram
+====================================
+
+Developed by: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+ESP32 PIN CONNECTIONS:
+=====================
+
+STEPPER MOTOR DRIVERS:
+---------------------
+X-Axis Driver (A4988/DRV8825):
+- STEP → ESP32 GPIO 2
+- DIR  → ESP32 GPIO 3
+- EN   → ESP32 GPIO 8 (shared)
+- VDD  → 3.3V
+- GND  → GND
+
+Y-Axis Driver (A4988/DRV8825):
+- STEP → ESP32 GPIO 4
+- DIR  → ESP32 GPIO 5
+- EN   → ESP32 GPIO 8 (shared)
+- VDD  → 3.3V
+- GND  → GND
+
+Z-Axis Driver (A4988/DRV8825):
+- STEP → ESP32 GPIO 6
+- DIR  → ESP32 GPIO 7
+- EN   → ESP32 GPIO 8 (shared)
+- VDD  → 3.3V
+- GND  → GND
+
+SAFETY SWITCHES:
+---------------
+Emergency Stop Button:
+- One terminal → ESP32 GPIO 9
+- Other terminal → GND
+- Internal pull-up enabled in code
+
+X-Axis Limit Switch:
+- NO terminal → ESP32 GPIO 10
+- COM terminal → GND
+- Internal pull-up enabled
+
+Y-Axis Limit Switch:
+- NO terminal → ESP32 GPIO 11
+- COM terminal → GND
+- Internal pull-up enabled
+
+Z-Axis Limit Switch:
+- NO terminal → ESP32 GPIO 12
+- COM terminal → GND
+- Internal pull-up enabled
+
+STATUS INDICATOR:
+----------------
+Status LED:
+- Anode (+) → ESP32 GPIO 13
+- Cathode (-) → 220Ω resistor → GND
+
+POWER CONNECTIONS:
+=================
+
+ESP32 Power:
+- VIN → 5V from USB or external supply
+- GND → Common ground
+
+Motor Driver Power:
+- VMOT → 12V external supply
+- GND → Common ground
+
+Motor Connections:
+- Connect each NEMA 17 motor to respective driver
+- A+, A-, B+, B- terminals
+- Refer to motor datasheet for coil identification
+
+POWER SUPPLY SPECIFICATIONS:
+===========================
+- Voltage: 12V DC
+- Current: 5A minimum (for 3 motors)
+- Regulation: ±5%
+- Ripple: <100mV
+
+DRIVER CONFIGURATION:
+====================
+Microstepping Pins (MS1, MS2, MS3):
+- Full Step: All LOW
+- Half Step: MS1=HIGH, MS2=LOW, MS3=LOW
+- 1/4 Step: MS1=LOW, MS2=HIGH, MS3=LOW
+- 1/8 Step: MS1=HIGH, MS2=HIGH, MS3=LOW
+- 1/16 Step: All HIGH
+
+Current Adjustment:
+- Adjust potentiometer on driver
+- Formula: Vref = Imax × 8 × Rs
+- Typical: 0.7V for 1A motor current
+
+SAFETY NOTES:
+=============
+⚠️ IMPORTANT SAFETY WARNINGS:
+- Always connect emergency stop button
+- Test emergency stop before operation
+- Use proper gauge wires for motor current
+- Install fuses in power supply lines
+- Ensure proper grounding
+- Check all connections before powering on
+
+RECOMMENDED WIRE GAUGES:
+=======================
+- Motor Power (12V): 16 AWG minimum
+- Signal Lines: 22-24 AWG
+- Ground: 16 AWG minimum
+- Emergency Stop: 18 AWG minimum
+
+PCB LAYOUT RECOMMENDATIONS:
+==========================
+- Separate analog and digital grounds
+- Use ground plane for noise reduction
+- Keep motor driver traces short
+- Add decoupling capacitors near drivers
+- Use shielded cables for motors
+- Isolate switching circuits from sensitive circuits
+
+CONNECTOR SPECIFICATIONS:
+========================
+- Motor Connectors: 4-pin JST-XH or Phoenix
+- Power Connector: 2-pin Phoenix or barrel jack
+- Signal Connectors: 2-pin JST-XH
+- Emergency Stop: Heavy-duty push button
+
+This diagram provides the complete wiring schematic for the
+TriAxis Pro stepper motor controller system.
+
+For technical support:
+Email: support@apexprecision.com
+Developer: Amol M.
+© 2024 APEX PRECISION MECHATRONIX PVT. LTD.

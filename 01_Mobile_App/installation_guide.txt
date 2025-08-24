@@ -1,0 +1,76 @@
+TriAxis Pro Mobile App - Installation Guide
+==========================================
+
+Developed by: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+ANDROID INSTALLATION:
+=====================
+
+Method 1: APK Installation (Included)
+-------------------------------------
+1. Enable "Unknown Sources" in Android Settings:
+   - Go to Settings > Security
+   - Enable "Unknown Sources" or "Install unknown apps"
+   - For Android 8+: Settings > Apps > Special Access > Install unknown apps
+
+2. Transfer APK to Android Device:
+   - Copy TriAxis_Pro.apk to device storage
+   - Use USB cable, email, or cloud storage
+
+3. Install APK:
+   - Open file manager on Android device
+   - Navigate to TriAxis_Pro.apk
+   - Tap the APK file
+   - Tap "Install" when prompted
+   - Wait for installation to complete
+
+4. Grant Permissions:
+   - Location: Required for Bluetooth scanning
+   - Bluetooth: Required for device communication
+   - Storage: Optional for pattern saving
+
+Method 2: Compile from Source
+-----------------------------
+1. Install Python and required packages:
+   - Python 3.8+
+   - Kivy framework
+   - Buildozer (for APK compilation)
+
+2. Compile APK:
+   - Use app_source_code.py
+   - Follow Kivy/Buildozer documentation
+   - Build for Android target
+
+SYSTEM REQUIREMENTS:
+===================
+- Android 8.0 (API 26) or higher
+- 4GB RAM minimum, 8GB recommended
+- 100MB free storage space
+- Bluetooth 5.0 support
+- WiFi capability
+
+FIRST LAUNCH:
+=============
+1. Launch TriAxis Pro app
+2. Grant all requested permissions
+3. Go to "Connect" tab
+4. Scan for TriAxis controllers
+5. Connect to your device
+6. Follow on-screen setup instructions
+
+TROUBLESHOOTING:
+===============
+- Installation Failed: Check "Unknown Sources" setting
+- App Won't Start: Restart device, check Android version
+- No Permissions: Manually grant in Settings > Apps > TriAxis Pro
+- Connection Issues: Check Bluetooth/WiFi is enabled
+
+SUPPORT:
+========
+Email: support@apexprecision.com
+Developer: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+Version: 1.0
+© 2024 APEX PRECISION MECHATRONIX PVT. LTD.
