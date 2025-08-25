@@ -1,0 +1,84 @@
+TriAxis Pro - Quick Start Guide
+===============================
+
+Developed by: Amol M.
+Company: APEX PRECISION MECHATRONIX PVT. LTD.
+
+🚀 GET STARTED IN 5 MINUTES!
+
+STEP 1: HARDWARE SETUP (2 minutes)
+==================================
+✓ Connect ESP32 to computer via USB
+✓ Wire stepper drivers to ESP32 (see wiring diagram)
+✓ Connect motors to drivers
+✓ Connect 12V power supply
+✓ Install emergency stop button
+
+STEP 2: FIRMWARE UPLOAD (1 minute)
+==================================
+✓ Open Arduino IDE
+✓ Install required libraries (see libraries_required.txt)
+✓ Open TriAxis_Controller.ino
+✓ Select "ESP32 Dev Module" board
+✓ Upload firmware to ESP32
+✓ Check serial monitor for "TriAxis Controller Ready"
+
+STEP 3: MOBILE APP INSTALL (1 minute)
+=====================================
+✓ Install TriAxis_Pro.apk on Android device
+✓ Enable "Unknown Sources" if needed
+✓ Grant Bluetooth and Location permissions
+✓ Launch TriAxis Pro app
+
+STEP 4: CONNECT & TEST (1 minute)
+=================================
+✓ Go to "Connect" tab in app
+✓ Select "Bluetooth" or "WiFi"
+✓ Scan for "TriAxis_Motor_Hub"
+✓ Tap "Connect"
+✓ Go to "Manual" tab
+✓ Test each axis movement
+
+STEP 5: FIRST PATTERN
+=====================
+✓ Go to "Patterns" tab
+✓ Select "Circle Pattern"
+✓ Tap "Execute"
+✓ Watch motors draw a circle!
+
+🎯 READY TO USE!
+
+QUICK TROUBLESHOOTING:
+=====================
+❌ Can't find device → Check ESP32 power and Bluetooth
+❌ Motors don't move → Check 12V power and wiring
+❌ App crashes → Restart phone, check Android version
+❌ Connection drops → Move closer to ESP32
+
+DEFAULT SETTINGS:
+================
+WiFi SSID: "TriAxis_Controller"
+WiFi Password: "APEX2024"
+Bluetooth Name: "TriAxis_Motor_Hub"
+
+SAFETY FIRST:
+============
+⚠️ Always test emergency stop button
+⚠️ Start with low speeds (100-500 RPM)
+⚠️ Check motor temperature during operation
+⚠️ Keep emergency stop within reach
+
+NEXT STEPS:
+==========
+📖 Read full instruction manual for advanced features
+🎨 Try the 3D Signature Replicator
+⚙️ Customize motor settings
+📱 Explore pattern library
+
+SUPPORT:
+========
+📧 support@apexprecision.com
+👨‍💻 Developer: Amol M.
+🏢 APEX PRECISION MECHATRONIX PVT. LTD.
+
+Version 1.0 | © 2024 APEX PRECISION MECHATRONIX
